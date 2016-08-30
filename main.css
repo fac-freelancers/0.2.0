@@ -1,0 +1,95 @@
+.landing-section, .our-motto-section {
+    height:100vh;
+}
+
+.title-section > h1 {
+    font-size: 80px;
+    margin: 0;
+}
+
+.col.l12.m12.s12.logo-section {
+    padding: 0 150px;
+}
+
+.logo-section-left {
+    text-align: right;
+    margin-top: 77px;
+}
+
+.logo-section-right {
+    text-align: left;
+    margin-top: 77px;
+}
+
+.logo-image {
+    width: 175px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+.logo-section-left, .logo-section-right {
+    font-size: 2.5em;
+    /*border-style: solid;*/
+    border-top: thick double #79b496;
+    border-bottom: thick double #79b496;
+}
+
+.logo-section-center {
+    text-align: center;
+}
+.title-section {
+    font-size: 3.5em;
+    text-align: center;
+    font-weight: 800;
+    color: #ecf0f1;
+}
+
+@media only screen and (max-width: 1396px) {
+  .col.l12.m12.s12.logo-section {
+      padding: 0px 100px;
+  }
+}
+
+@media only screen and (max-width: 1296px) {
+  .logo-section-left, .logo-section-right {
+      font-size: 2em;
+  }
+
+  .logo-image {
+      width: 125px;
+  }
+
+  .logo-section-left, .logo-section-right {
+      margin-top: 57px;
+  }
+}
+
+@media only screen and (max-width: 1058px) {
+  .col.l12.m12.s12.logo-section {
+      padding: 0px 50px;
+  }
+}
+
+@media only screen and (max-width: 928px) {
+  .logo-section-left, .logo-section-right {
+      font-size: 1.5em;
+  }
+
+  .logo-image {
+      width: 75px;
+  }
+
+  .logo-section-left, .logo-section-right {
+      margin-top: 40px;
+  }
+}
+
+@media only screen and (max-width: 734px) {
+  .col.l12.m12.s12.logo-section {
+      padding: 0px 20px;
+  }
+
+  .logo-section-left, .logo-section-right {
+      font-size: 1.3em;
+  }
+}

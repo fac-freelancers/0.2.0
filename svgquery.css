@@ -1,0 +1,14 @@
+.brainstorm {
+  height: 580px;
+  width:80%;
+  margin: 0 auto;
+}
+
+@media only screen and (min-width: 1681px) {
+
+    .brainstorm {
+      height:615px;
+      overflow: hidden;
+    }
+
+}
