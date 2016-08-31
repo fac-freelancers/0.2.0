@@ -364,78 +364,31 @@
         // to choose colors go to: http://www.rapidtables.com/web/color/RGB_Color.htm
         // And match them to the numbers in the setBackground function
 
-        if (percentageScrolled < 100 / 12) {
+        // 4 new colours: rgb(249, 192, 12), rgb(0, 185, 241), rgb(114, 0, 218), rgb(249, 50, 12);
+
+        if (percentageScrolled < 100 / 4) {
           setBackground(
-            255,
-            100 - Math.floor(50 * percentageScrolled / (100 / 12)),
-            100 - Math.floor(50 * percentageScrolled / (100 / 12))
+            249 - Math.floor(249 * percentageScrolled / (100 / 4)),
+            192 - Math.floor(7 * percentageScrolled / (100 / 4)),
+            12 + Math.floor(229 * percentageScrolled / (100 / 4))
           );
-        } else if (percentageScrolled < 2 * 100 / 12) {
+        } else if (percentageScrolled < 2 * 100 / 4) {
           setBackground(
-            255,
-            50 -  Math.floor(50 * (percentageScrolled - 100 / 12) / (100 / 12)),
-            50 -  Math.floor(50 * (percentageScrolled - 100 / 12) / (100 / 12))
+            0 + Math.floor(114 * (percentageScrolled - 100 / 4) / (100 / 4)),
+            185 - Math.floor(185 * (percentageScrolled - 100 / 4) / (100 / 4)),
+            241 - Math.floor(23 * (percentageScrolled - 100 / 4) / (100 / 4))
           );
-        }
-        else if (percentageScrolled < 3 * 100 / 12) {
+        } else if (percentageScrolled < 3 * 100 / 4) {
           setBackground(
-            255,
-            0 + Math.floor(128 * (percentageScrolled - 2 * 100 / 12) / (100 / 12)),
-            0
-          );
-        } else if (percentageScrolled < 4 * 100 / 12) {
-          setBackground(
-            255,
-            128 + Math.floor(25 * (percentageScrolled - 3 * 100 / 12) / (100 / 12)),
-            0 + Math.floor(50 * (percentageScrolled - 3 * 100 / 12) / (100 / 12))
-          );
-        } else if (percentageScrolled < 5 * 100 / 12) {
-          setBackground(
-            255,
-            153 + Math.floor(25 * (percentageScrolled - 4 * 100 / 12) / (100 / 12)),
-            50 + Math.floor(50 * (percentageScrolled - 4 * 100 / 12) / (100 / 12))
-          );
-        } else if (percentageScrolled < 6 * 100 / 12) {
-          setBackground(
-            255,
-            178 + Math.floor(77 * (percentageScrolled - 5 * 100 / 12) / (100 / 12)),
-            100
-          );
-        } else if (percentageScrolled < 7 * 100 / 12) {
-          setBackground(
-            255,
-            255,
-            100 - Math.floor(50 * (percentageScrolled - 6 * 100 / 12) / (100 / 12))
-          );
-        } else if (percentageScrolled < 8 * 100 / 12) {
-          setBackground(
-            255,
-            255,
-            50 - Math.floor(50 * (percentageScrolled - 7 * 100 / 12) / (100 / 12))
-          );
-        } else if (percentageScrolled < 9 * 100 / 12) {
-          setBackground(
-            255 - Math.floor(127 * (percentageScrolled - 8 * 100 / 12) / (100 / 12)),
-            255,
-            0
-          );
-        } else if (percentageScrolled < 10 * 100 / 12) {
-          setBackground(
-            128 + Math.floor(25 * (percentageScrolled - 9 * 100 / 12) / (100 / 12)),
-            255,
-            0 + Math.floor(50 * (percentageScrolled - 9 * 100 / 12) / (100 / 12))
-          );
-        } else if (percentageScrolled < 11 * 100 / 12) {
-          setBackground(
-            153 + Math.floor(25 * (percentageScrolled - 10 * 100 / 12) / (100 / 12)),
-            255,
-            50 + Math.floor(50 * (percentageScrolled - 10 * 100 / 12) / (100 / 12))
+            114 + Math.floor(135 * (percentageScrolled - 2 * 100 / 4) / (100 / 4)),
+            0 + Math.floor(50 * (percentageScrolled - 2 * 100 / 4) / (100 / 4)),
+            218 - Math.floor(206 * (percentageScrolled - 2 * 100 / 4) / (100 / 4))
           );
         } else {
           setBackground(
-            178,
-            255,
-            100
+            249,
+            50,
+            12
           );
         }
       };
