@@ -5,108 +5,57 @@
     <title></title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <link rel="stylesheet" href="main.css" media="screen" title="no title" charset="utf-8">
-    <link rel="stylesheet" href="svgquery.css" media="screen" title="no title" charset="utf-8">
-
-    <style media='screen' type='text/css'>
-      body, section {
-        border: 0;
-        margin: 0;
-        padding: 0;
-      }
-
-      .content-section {
-        color: #ecf0f1;
-        font-size: 2em;
-        text-align: center;
-      }
-    </style>
   </head>
   <body>
+    <img src="./LOGO-Factree-4.png" />
+    <div class="content-wrapper">
+      <section class='content-section'>
+        <div class='content'>
+          <h2>
+            WE ARE AN INNOVATION HUB FOR APP AND WEB DEVELOPMENT
+          </h2>
+        </div>
+      </section>
 
-        <section class='content-section'>
-        FACTREE
-        </section>
+      <section class='content-section'>
+        <div class='content'>
+          <h2>
+            CREATIVE CLIENT WORK
+          </h2>
+          <p>
+            We work with reputable partners and clients
+          </p>
+        </div>
+      </section>
 
-        <section class='content-section'> 
-        WHO ARE WE - FacTree is a team of web developers who build amazing apps
-        </section>
-        <section class='content-section'> 
-        HOW WE WORK - Sohil can you fill in these bits...
-        </section>
-        <section class='content-section'>
-        Sohil can you fill in these bits...
-        </section>
-        <section class='content-section'> 
-        Sohil can you fill in these bits...
-        </section>
+      <section class='content-section'>
+        <div class='content'>
+          <h2>
+            HOW WE WORK
+          </h2>
+          <p>
+            Client love it. Even the stuff we don't try too hard on.
+          </p>
+        </div>
+      </section>
 
-    <script>
-
-      var section = document.getElementsByClassName('content-section');
-
-      [].forEach.call(section, function (el) {
-        el.style.height = window.innerHeight + 'px';
-        el.style.lineHeight = window.innerHeight + 'px';
-      });
-
-    </script>
+      <section class='content-section'>
+        <div class='content'>
+          <h2>
+            WHAT THE FUTURE HOLDS
+          </h2>
+          <p>
+            Even more exquisite apps than the last time.
+          </p>
+        </div>
+      </section>
+    </div>
+    <script src='./set-height.js'></script>
 
     <script src='./underscore.js'>
       // using their _.throttle method so that the scroll function doesn't fire too often
       // We should take out only this function from their library instead of loading the whole thing
     </script>
-    <script>
-      window.addEventListener('scroll', _.throttle(scroll, 50));
-
-      function scroll () {
-        var body = document.body;
-        var scrollableHeight = body.scrollHeight - window.innerHeight;
-        var scrolledHeight = body.scrollTop;
-        var percentageScrolled = Math.floor(1000 * scrolledHeight / scrollableHeight) / 10;
-
-        console.log('percentageScrolled: ', percentageScrolled);
-
-        function rgb (red, green, blue) {
-          return 'rgb(' + red + ',' + green + ',' + blue + ')'
-        };
-
-        function setBackground (red, green, blue) {
-          console.log('red: ', red, 'green: ', green, 'blue: ', blue);
-          body.style.backgroundColor = rgb(red, green, blue);
-        };
-
-        // to choose colors go to: http://www.rapidtables.com/web/color/RGB_Color.htm
-        // And match them to the numbers in the setBackground function
-
-        // 4 new colours: rgb(249, 192, 12), rgb(0, 185, 241), rgb(114, 0, 218), rgb(249, 50, 12);
-
-        if (percentageScrolled < 100 / 4) {
-          setBackground(
-            249 - Math.floor(249 * percentageScrolled / (100 / 4)),
-            192 - Math.floor(7 * percentageScrolled / (100 / 4)),
-            12 + Math.floor(229 * percentageScrolled / (100 / 4))
-          );
-        } else if (percentageScrolled < 2 * 100 / 4) {
-          setBackground(
-            0 + Math.floor(114 * (percentageScrolled - 100 / 4) / (100 / 4)),
-            185 - Math.floor(185 * (percentageScrolled - 100 / 4) / (100 / 4)),
-            241 - Math.floor(23 * (percentageScrolled - 100 / 4) / (100 / 4))
-          );
-        } else if (percentageScrolled < 3 * 100 / 4) {
-          setBackground(
-            114 + Math.floor(135 * (percentageScrolled - 2 * 100 / 4) / (100 / 4)),
-            0 + Math.floor(50 * (percentageScrolled - 2 * 100 / 4) / (100 / 4)),
-            218 - Math.floor(206 * (percentageScrolled - 2 * 100 / 4) / (100 / 4))
-          );
-        } else {
-          setBackground(
-            249,
-            50,
-            12
-          );
-        }
-      };
-      scroll();
-    </script>
+    <script src='./scrolling.js'></script>
   </body>
 </html>
