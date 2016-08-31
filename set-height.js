@@ -8,7 +8,7 @@
     });
 
     [].forEach.call(content, function (el) {
-      el.style.marginTop = Math.floor(window.innerHeight / 3) + 'px';
+      el.style.marginTop = Math.floor(window.innerHeight / 4) + 'px';
     });
   }
 

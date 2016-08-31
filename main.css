@@ -3,8 +3,30 @@
 }
 
 img {
-  position: fixed;
+  /*position: fixed;*/
   height: 15%;
+}
+
+.landing-image {
+    height: 30em;
+    margin: 0px auto;
+    display: block;
+    z-index: -1;
+    opacity: 0.5
+}
+
+.content {
+    position: relative;
+    width: 100%; /* for IE 6 */
+}
+
+.title-text {
+    position: absolute;
+    top: 35%;
+    width: 100%;
+    font-size: 4em;
+text-align: center;
+color: white;
 }
 
 body {
@@ -30,7 +52,7 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 7vh;
 }
 
-.content-wrapper {
+/*.content-wrapper {
   flex-direction: column;
   display: flex;
   align-items: center;
@@ -41,4 +63,4 @@ h1, h2, h3, h4, h5, h6 {
   color: #ecf0f1;
   font-size: 2em;
   text-align: center;
-}
+}*/
